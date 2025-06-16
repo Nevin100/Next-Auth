@@ -1,7 +1,10 @@
-export default function Home(){
+import { FaGithub } from "react-icons/fa";
+
+export default function Home() {
   return (
     <div>
-      <h1>Hello from Next</h1>
+      <p>You are not signed In</p>
+      <button>Sign In <FaGithub/> </button>
     </div>
   )
 }
