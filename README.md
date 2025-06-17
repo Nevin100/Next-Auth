@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">🔐 Next-Crud</h1>
+<p align="center">
+  <b>A slick and minimal Next.js app powered by GitHub OAuth — because logging in like a pro matters.</b>
+</p>
 
-## Getting Started
+<div align="center">
+  
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript)
+  ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss)
+  ![NextAuth.js](https://img.shields.io/badge/NextAuth.js-black?style=for-the-badge&logo=vercel)
+  ![GitHub OAuth](https://img.shields.io/badge/GitHub%20OAuth-181717?style=for-the-badge&logo=github)
 
-First, run the development server:
+</div>
 
+---
+
+## 🚀 Introduction
+
+**Next-Crud** is a modern, fast, and developer-friendly CRUD boilerplate built with 💙 Next.js and GitHub authentication. Integrated with the latest `next-auth@v5`, it offers seamless GitHub login and clean session management.  
+
+If you're tired of building auth flows from scratch — this one's for you. Plug, play, and CRUD away.
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech            | Purpose                              |
+|-----------------|--------------------------------------|
+| **Next.js 14**  | App framework                        |
+| **TypeScript**  | Type-safe coding experience          |
+| **Tailwind CSS**| Stylish yet utility-first UI         |
+| **NextAuth v5** | Secure authentication                |
+| **GitHub OAuth**| GitHub login made breezy             |
+
+---
+
+## ✨ Features
+
+- ✅ GitHub OAuth Integration via NextAuth v5
+- 🧠 Server-side authentication logic (`use server`)
+- 📦 Full TypeScript support
+- 💅 TailwindCSS styling out of the box
+- 🔁 Ready-to-extend CRUD base layout
+
+---
+
+## 🧩 Getting Started
+
+# 1. Clone the Repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/Next-Crud.git
+cd Next-Crud
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 2. Install Dependencies
+```bash
+Copy
+Edit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 3. Configure Environment Variables
+Create a .env.local file and add:
+```bash
+env
+GITHUB_ID=your_github_oauth_client_id
+GITHUB_SECRET=your_github_oauth_client_secret
+NEXTAUTH_SECRET=your_secure_auth_secret
+NEXTAUTH_URL=http://localhost:3000
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 4. Run the App
+```bash
+Copy
+Edit
+npm run dev
